@@ -258,12 +258,12 @@ function IsURL(str_url){
     var isValid = false;
     var strRegex = ""
         +"^((https|http)?://)"
-        + "(([0-9].)[0-9]" // IP形式的URL- 199.194.52.184
-        + "|" // 允许IP和DOMAIN（域名）
-        + "([0-9a-z_!~*'()-]+.)*" // 域名-
+        + "(([0-9].)[0-9]" // IP形式的URL
+        + "|" // 允许IP或DOMAIN
+        + "([0-9a-z_!~*'()-]+.)*" // 域名
         + "([0-9a-z][0-9a-z-])?[0-9a-z]." // 二级域名
-        + "[a-z])" // first level domain- .com or .museum
-        + "(:[0-9])?"; // 端口- :80
+        + "[a-z])" // first level domain
+        + "(:[0-9])?"; // 端口
     var re=new RegExp(strRegex);
     //re.test()
     if (re.test(str_url)){
