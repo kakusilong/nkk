@@ -1,0 +1,34 @@
+{
+  "name": "nkk",
+  "description": "npm proxy manager can help you easy and fast switch between different npm proxies",
+  "keywords": [
+    "NPM",
+    "proxy"
+  ],
+  "version": "0.3.6",
+  "author": "kakusilong",
+  "license": "MIT",
+  "bin": "./cli.js",
+  "homepage": "https://github.com/kakusilong/nkk",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kakusilong/nkk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kakusilong/nkk/issues"
+  },
+  "scripts": {
+    "star": "npm star nkk"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "commander": "^2.9.0",
+    "extend": "^3.0.0",
+    "ini": "^1.1.0",
+    "node-echo": "^0.1.1",
+    "npm": "^3.10.3",
+    "only": "0.0.2",
+    "path": "^0.12.7",
+    "request": "^2.72.0"
+  }
+}
